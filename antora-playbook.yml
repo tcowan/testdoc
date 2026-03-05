@@ -1,6 +1,6 @@
 site:
   title: Not1MM
-  start_page: not1mm::not1mmindex.adoc
+  start_page: not1mm::index.adoc
 content:
   sources:
     - url: .
