@@ -1,0 +1,21 @@
+= Various File Locations
+
+== Data Files
+
+If your system has an ‘XDG++_++DATA++_++HOME‘ environment variable set,
+the database and CW macro files can be found there. Otherwise they will
+be found at ‘yourhome/.local/share/not1mm‘
+
+== Configuration Files
+
+Configuration file(s) can be found at the location defined by
+
+....
+XDG_CONFIG_HOME
+....
+
+Otherwise they will be found at
+
+....
+yourhome/.config/not1mm
+....

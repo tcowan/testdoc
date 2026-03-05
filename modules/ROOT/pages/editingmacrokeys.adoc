@@ -1,0 +1,114 @@
+= Editing Macro Keys
+
+To edit the macro keys, choose *File ++>>++ Edit Macros*. This will open
+the system default text editor and display the current active macros.
+The current operating mode (CW, SSB or RTTY) and contest will
+automatically select the corresponding macro file. Each contest and mode
+has its own unique copy of the macros – these are not global settings.
+When finished editing, save the file and close the editor.
+
+Alternatively, macro files can be directly edited outside the not1mm
+program. On Linux, individual contest directories are located in
+‘.local/share/not1mm/‘. Refer to the *Data Files* section above.
+
+After editing and saving the macro file, any changes are enabled by
+toggling between the ‘Run‘ and ‘S&P‘ states.
+
+== Macro Substitutions
+
+The macro instruction set is shown below.
+
+[cols="^,<",options="header",]
+|===
+|*Macro* |*Substitution*
+|++{++MYCALL} |Send my station callsign.
+
+|++{++HISCALL} |Send the callsign of the other station.
+
+|++{++SNT} |Send 5NN (cw) or 599 (ssb)
+
+|++{++SENTNR} |Send the SentNR field.
+
+|++{++EXCH} |Send the Exchange field; contest must be defined.
+
+|++{++PREVNR} |Send the previous serial number.
+
+|++{++OTHER1} |Send the SentNR/Name field without altering it.
+
+|++{++OTHER2} |Send the Comment field without altering it.
+
+|++{++LOGIT} |Log the contact after macro pressed.
+
+|++{++TX} |Switch to transmit mode (PTT ON) - NOTE: the ‘Sends‘ macros
+will toggle PTT ON/OFF
+
+|++{++RX} |Switch to receive mode (PTT OFF).
+
+|++{++TX/RX} |Toggle between transmit/receive (PTT) mode.
+
+|++{++MARK} |Highlight the current call in the band map.
+
+|++{++SPOT} |Spot the current call to the cluster.
+
+|++{++RUN} |Change to Run mode.
+
+|++{++SANDP} |Change to S&P mode.
+
+|++{++WIPE} |Clear all the input fields.
+
+|++#++ |Sends serial number.
+
+|++{++VOICE1} - ++{++VOICE10} |Uses ‘rigctld‘ to send voice macros
+stored in the radio.
+
+| RI: |Send Rig specific codes. See Macro control of radio functions.
+
+| latexmath:[\wedge]M |in a RTTY macro will be replaced with a newline
+character.
+|===
+
+== Macro Use with Voice
+
+*VOICE1–VOICE10* +
+If you use rigctld and your radio supports it, you can use the macros
+VOICE1, VOICE2, etc to send the recorded audio messages stored in the
+radio.
+
+=== Voice macro .wav files
+
+The macros used with voice can also linked to .wav files. Specify the
+filename, but exclude the .wav extension. The filename must be lowercase
+and enclosed in brackets. For example ‘++[++cq++]++‘ will play ‘cq.wav‘,
+‘++[++again++]++‘ will play ‘again.wav‘. The .wav files are stored in
+the data directory. See *Various data file locations* above for the
+location of these data files. For me, the macro ‘++[++cq++]++‘ will play
+
+....
+/home/mbridak/.local/share/not1mm/K6GTE/cq.wav
+....
+
+*The default .wav files are not the ones you will want to use. They
+sound like an idiot.* Use a program like Audacity or similar to record
+new .wav files in your own voice.
+
+NATO phonetic .wav files are also provided for each letter and number.
+Their use can be illustrated with an example from the CQWW SSB Contest
+operating from Zone 3. The callsign K5TUX is entered and the following
+macro key is activated: ‘HISCALL SNT SENTNR‘. The program then sends
+this sequence of audio phonetics: KILO FIVE TANGO UNIFORM X-RAY FIVE
+NINE NINE THREE.
+
+=== Macro control of radio functions
+
+Macros can also be used to send CAT/CI-V control codes to the radio. To
+make use of this feature, start the command with the letters "RI" and a
+colon, followed by the desired command. If the command is ASCII text
+(for example, for Yaesu radios), just enter the text after "RI:". For
+binary codes, enter hexadecimal values separated by spaces.
+
+For example, to enable the auto-notch filter on a Yaesu FT-710, the
+command would be "RI:BC01;". To do the same on an Icom 7300, the command
+would be something like "RI:FE FE 94 E0 16 41 01 FD". Refer to the
+operating manual or online sources for the correct command syntax. Note
+that CAT/CI-V command macros are only available when either FLRig or
+rigctld (HamLib) are being used for transceiver control.

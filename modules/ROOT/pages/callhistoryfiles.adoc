@@ -1,0 +1,13 @@
+= Call History Files
+
+To use Call History files, go to *FILE ++>>++ Configuration Settings*.
+
+image:pic/configuration_options.png[image,scaledwidth=90.0%]
+
+Place a check in the ‘Use Call History‘ box. Call history files are very
+specific to the contest you are working. Example files can be obtained
+from https://n1mmwp.hamdocs.com/mmfiles/categories/callhistory/?
+website. They have a searchbox so you can find the contest you are
+looking for. If you are feeling masocistic, you can craft your own. The
+general makeup of the file is a header defining the fields to be used,
+followed by by lines of comma separated data.

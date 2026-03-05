@@ -1,0 +1,8 @@
+= Recalulate Mults
+
+The program automatically updates the score as each new entry is logged.
+There may be a situation where a station has been logged incorrectly.
+This QSO can be easily edited as described above, but this may add or
+remove a multiplier. To remedy this and correct the score, a Recalculate
+Mults function is located in the Misc menu. The Cabrillo/ADIF files must
+be regenerated.

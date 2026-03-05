@@ -1,0 +1,9 @@
+= ADIF
+
+*File ++>>++ Generate ADIF*
+
+Boom... ADIF
+
+....
+`StationCall`_`ContestName`_`Date`_`Time`.adi
+....

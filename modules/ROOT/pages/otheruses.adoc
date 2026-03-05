@@ -1,0 +1,21 @@
+= Other Uses for the Callsign Field
+
+*The SPACE bar must be pressed to enable any of the following
+functions.*
+
+== Frequency
+
+*Frequency* Enter a frequency in kHz. This changes the active logging
+band. If CAT control is enabled, the specified frequency will change the
+transceiver VFO.
+
+== Modes
+
+*CW, SSB, RTTY* Sets the mode being logged. If CAT control is enabled,
+the mode changes on the radio.
+
+== Change Operator
+
+*OPON* Specify the operator currently logging. +
+ +
+*Important: Press the SPACE bar after making any of the above entries.*

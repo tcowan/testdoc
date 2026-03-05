@@ -1,0 +1,31 @@
+= Sending CW
+
+== Sending CW Macros
+
+Predefined CW messages can be sent with function keys F1–F12. See the
+following section on Editing Macro Keys.
+
+== Auto CQ
+
+Pressing ‘SHIFT-F1‘ activates the Auto CQ mode. The program is placed in
+the Run state and the F1 macro is sent then resent after the Auto CQ
+delay interval. A visual indicator appears to the upper left of the F1
+macro key to alert that Auto CQ is active. A small progress bar
+indicates when F1 will fire next.
+
+image:pic/auto_cq_indicator.png[image,scaledwidth=25.0%]
+
+=== Setting the delay
+
+The Auto CQ delay interval can be changed in the ‘Options‘ tab of the
+Configuration settings. This value is the sum of the F1 macro duration
+_plus_ the desired pause time in which stations can respond. If the
+program is in S&P mode when Auto CQ is enabled, it will automatically
+switch to RUN mode.
+
+== Sending CW Free Form
+
+Freeform text is sent by pressing *CTRL-SHIFT-K*. An entry field appears
+at the bottom of the window for typing from the keyboard terminal. The
+text is sent by either pressing *CTRL-SHIFT-K* or using the Enter key to
+close the entry field.

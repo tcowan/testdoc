@@ -1,0 +1,72 @@
+= Installation
+
+This section will hopefully get you started with installing Not1MM.
+
+== Prerequisites
+
+Not1MM requires:
+
+* Python 3.10{plus}
+* PyQt6
+* libportaudio2
+* libxcb-cursor0 (maybe... Depends on the distro)
+* libxslt-devel (maybe... Depends on the distro)
+* libxml2-devel (maybe... Depends on the distro)
+
+You should install these through your distribution’s package manager
+before continuing.
+
+== The Easy and Fast way to install or run the latest version
+
+Step 1. Visit https://docs.astral.sh/uv/ and install uv.
+
+In short you run this in your terminal:
+
+[,console]
+----
+curl -LsSf https://astral.sh/uv/install.sh | sh
+----
+
+Step 2. Tell it to run not1mm:
+
+[,console]
+----
+uvx not1mm@latest
+----
+
+or install it:
+
+[,console]
+----
+uv tool install not1mm@latest
+----
+
+That’s it... It will go out, fetch the latest version of not1mm, setup a
+python virtual environment, get all the needed python libraries, cache
+everything and run not1mm. The first time takes a minute, but each time
+after, it’s lightning quick and it will automatically check for updates
+and run the latest version.
+
+But wait... There’s more. If your distro is old and you’re stuck with an
+older version of python... Say 3.10. And you want to see what all the
+cool kids are using. But you don’t want to corrupt your broke ol’ system
+by downloading the newest Python version. No problem. You can tell uv to
+run not1mm with any version of Python you’d like. Let’s say 3.14.
+
+[,console]
+----
+uvx --python 3.14 not1mm@latest
+----
+
+It’ll download Python 3.14 into your virtual environment and run not1mm.
+Let’s say I was an idiot and pushed a new version and did’t fully test
+it. This happens a-lot... We test in production. Or lets say you just
+want to see the pain that was back in 2023. No problem. Just tell it
+which version of not1mm you’d like to run.
+
+[,console]
+----
+uvx --python 3.10 not1mm==23.5.19
+----
+
+Pow! Enjoy the pain...

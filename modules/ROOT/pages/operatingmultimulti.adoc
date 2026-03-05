@@ -1,0 +1,37 @@
+= Operating Multi-Multi
+
+Work is underway on Multi-Multi contest operations. There is a companion
+project *renfield* +
+_https://github.com/mbridak/renfield_ that will be needed for this. The
+idea is to have a separate slave server running, preferably on another
+computer that’s on the same network as the contesting PCs. This server
+will handle all the database CRUD operations. It will assign serial
+numbers, check for duplivate contacts, and generate a Cabrillo file.
+
+image:pic/renfield_cli.png[image,scaledwidth=75.0%]
+
+This is a very lightweight terminal application that can be easily
+hosted on a Raspberry Pi or similar device. In a pinch it can be run
+alongside Not1MM on one of the contesting machines but use caution. You
+could even use this while operating alone as an automated backup. A copy
+of the log would be available in the event of a logging computer
+failure.
+
+== Network Settings for Multi-Multi
+
+In the configuration dialog under the group tab, select Connect to
+server.
+
+image:pic/configuration_group.png[image,scaledwidth=50.0%]
+
+One computer needs to be the master station. The master station will
+tell the renfield server what contest is being run.
+
+== Contest Settings for Multi-Multi
+
+In Contest Settings, if the Operator is set to "MULTI-OP" and the
+Transmitter category is not "ONE" or "SWL", Not1MM will ask the renfield
+server for serial numbers and dupe checks.
+
+image:pic/multi_multi.png[image,scaledwidth=50.0%]
+

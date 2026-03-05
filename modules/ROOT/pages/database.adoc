@@ -1,0 +1,27 @@
+= The Database
+
+== Why
+
+The database holds... wait for it... data... I know, shocker right? A
+database can hold one or many contest logs. It also holds the station
+information, everything shown in the Station Settings dialog. You can
+have one database for the rest of your life. Filled with hundreds of
+contests you’ve logged. Or, you can create a new database to hold just
+one contest. You do you Boo.
+
+== The First One is Free
+
+On initial launch, a database is created called ‘ham.db‘. This and all
+future databases are located in the data directory mentioned above.
+
+== Why Limit Yourself?
+
+You can create a new database by selecting *File ++>>++ New Database*
+from the main window, and give it a snazzy name. Why limit yourself?
+Hell, create one every day for all I care. You can manage your own
+digital disaster.
+
+== Revisiting an Old Friend
+
+You can select a previously created database by selecting: *File ++>>++
+Open Database*.

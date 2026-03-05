@@ -1,0 +1,47 @@
+= ESM
+
+I caved and started working on ESM or Enter Sends Message. To test it
+out you can go to *FILE ++>>++ Configuration Settings*
+
+image:pic/configuration_options.png[image,scaledwidth=90.0%]
+
+Check the mark to Enable ESM and tell it which function keys do what.
+The keys will need to have the same function in both Run and S&P modes.
+The function keys will highlight green depending on the state of the
+input fields. The green keys will be sent if you press the Enter key.
+You should use the Space bar to move to another field.
+
+The contact will be automatically logged once all the needed info is
+collected and the QRZ (for Run) or Exchange (for S&P) is sent.
+
+== Run States
+
+=== CQ
+
+image:pic/esm_cq.png[image,scaledwidth=75.0%]
+
+=== Call Entered Send His Call and the Exchange
+
+image:pic/esm_withcall.png[image,scaledwidth=75.0%]
+
+=== Empty Exchange Field Send AGN Till You Get It
+
+image:pic/esm_empty_exchange.png[image,scaledwidth=75.0%]
+
+=== Exchange Field Filled, Send TU QRZ and Logs it
+
+image:pic/esm_qrz.png[image,scaledwidth=75.0%]
+
+== S&P States
+
+=== With His Call Entered, Send Your Call
+
+image:pic/esm_sp_call.png[image,scaledwidth=75.0%]
+
+=== If No Exchange Entered Send AGN
+
+image:pic/esm_sp_agn.png[image,scaledwidth=75.0%]
+
+=== With Exchange Entered, Send Your Exchange and Log it
+
+image:pic/esm_sp_logit.png[image,scaledwidth=75.0%]

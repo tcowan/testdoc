@@ -1,0 +1,16 @@
+= cty.dat and QRZ for Distance and Bearing
+
+When a callsign is entered, a lookup is done in the cty.dat file to
+identify the country of origin, geographic center, CQ zone, and ITU
+region. Great circle calculations are then done to determine the heading
+and distance from the home grid square to the geographic center of the
+DX station. This information is displayed at the bottom left.
+
+image:pic/heading_distance.png[image,scaledwidth=90.0%]
+
+Next, a request is made to qrz.com for the grid square of the callsign.
+If there is a response, more accurate distance and bearing numbers are
+displayed. The ‘Regional‘ text is replaced with the station’s specific
+6-digit grid square as shown below.
+
+image:pic/heading_distance_qrz.png[image,scaledwidth=90.0%]

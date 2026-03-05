@@ -1,0 +1,5 @@
+component_version_filter:
+  names: '**'
+assembly:
+  attributes:
+    source-highlighter: rouge

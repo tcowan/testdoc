@@ -1,6 +1,6 @@
 site:
-  title: Docs Site
-  start_page: project-name::not1mmindex.adoc
+  title: Not1MM
+  start_page: not1mm::not1mmindex.adoc
 content:
   sources:
     - url: .

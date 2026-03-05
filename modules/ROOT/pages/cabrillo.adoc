@@ -1,0 +1,17 @@
+= Cabrillo
+
+Click on *File ++>>++ Generate Cabrillo*
+
+The file will be placed in your home directory. The name will be in the
+format of:
+
+....
+`StationCall`_`ContestName`_`CurrentDate`_`CurrentTime`.log
+....
+
+So for me, it would look like:
+
+....
+K6GTE\_CANADA-DAY\_2023-09-04\_07-47-05.log
+....
+

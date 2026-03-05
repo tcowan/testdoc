@@ -1,0 +1,51 @@
+= After the Install
+
+You can now open a new terminal and type ‘not1mm‘. On it’s first run, it
+may or may not install a lovely non AI generated icon, which you can
+later click on to launch the application.
+
+== You May or May Not Get a Warning Message Like
+
+----
+WARNING: The script not1mm is installed in '/home/mbridak/.local/bin',
+which is not on PATH. Consider adding this directory to PATH or,
+if you prefer to suppress this warning, use --no-warn-script-location.
+----
+
+If you do, log out and back in or reboot.
+
+== Or this Fan Favorite
+
+----
+Warning: Ignoring XDG\_SESSION\_TYPE=wayland on Gnome.
+Use QT\_QPA\_PLATFORM=wayland to run on Wayland anyway.
+qt.qpa.plugin: Could not load the Qt platform plugin "xcb"
+even though it was found. This application failed to start
+because no Qt platform plugin could be initialized.
+Reinstalling the application may fix this problem.
+----
+
+You can use your package manager to load *libxcb-cursor0*. +
+If that is not an option, you can export an environment variable and
+launch the app like this:
+
+[,console]
+----
+export QT_QPA_PLATFORM=wayland; not1mm
+----
+
+For a more permanent solution, you can place the line:
+
+[,console]
+----
+export QT_QPA_PLATFORM=wayland
+----
+
+in your home directories .bashrc file. Then after logging out and back
+in you should be able to launch it normally.
+
+== Update Your CTY and SCP Files
+
+Before operating in a contest, you might want to update the CTY and SCP
+files. You can do this by choosing *FILE ++>>++ Update CTY* and *FILE
+++>>++ Update MASTER.SCP*

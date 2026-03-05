@@ -1,0 +1,56 @@
+= List of Should-Be-Working Contests
+
+* General Logging
+* 10 10 Fall CW
+* 10 10 Spring CW
+* 10 10 Summer Phone
+* 10 10 Winter Phone
+* ARI 40 80
+* ARI DX
+* ARRL 10M
+* ARRL 160M
+* ARRL DX CW, SSB
+* ARRL Field Day
+* ARRL RTTY Roundup
+* ARRL Sweepstakes
+* ARRL VHF
+* CQ 160
+* CQ WPX
+* CQ World Wide
+* CWOps CWT, CWO
+* DARC Xmas
+* DARC VHF
+* EA Majistad CW
+* EA Majistad SSB
+* EA RTTY
+* ES FIELD DAY HF
+* ES OPEN HF
+* Estonian LL Cup
+* Helvetia
+* IARU Field day
+* IARU HF
+* ICWC MST
+* Japan International DX
+* K1USN Slow Speed Test
+* Labre RS Digi
+* LZ DX
+* NAQP
+* Phone Weekly Test
+* RAEM
+* RAC Canada Day
+* RandomGram
+* REF CW, SSB
+* RSGB 80M CC
+* SAC CW, SSB
+* SPDX
+* Stew Perry Top band
+* UK/EI DX
+* Weekly RTTY
+* Work All Germany
+* Winter Field Day
+
+== Other not so Supported Contests
+
+Of note, state QSO parties. I haven’t worked any yet. And no one has
+submitted a PR adding one... So there you go. In the near future I’ll
+probably add California, guess where I live, and the 4 states QSO party.
