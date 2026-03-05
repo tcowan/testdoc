@@ -1,7 +1,7 @@
 = Not1MM
+testing
 
-The world’s number 1 unfinished contest logger. ^++*++According to my
-daughter Corinna.^
+The world's number 1 unfinished contest logger. ^*According{sp}to{sp}my{sp}daughter{sp}Corinna.^
 
 Not1MM’s interface is a blatant rip-off of N1MM. It is NOT N1MM and any
 problem you have with this software should in no way reflect on their
