@@ -24,21 +24,21 @@ In short you run this in your terminal:
 
 [,console]
 ----
-curl -LsSf https://astral.sh/uv/install.sh | sh
+$ curl -LsSf https://astral.sh/uv/install.sh | sh
 ----
 
 Step 2. Tell it to run not1mm:
 
 [,console]
 ----
-uvx not1mm@latest
+$ uvx not1mm@latest
 ----
 
 or install it:
 
 [,console]
 ----
-uv tool install not1mm@latest
+$ uv tool install not1mm@latest
 ----
 
 That’s it... It will go out, fetch the latest version of not1mm, setup a
@@ -55,7 +55,7 @@ run not1mm with any version of Python you’d like. Let’s say 3.14.
 
 [,console]
 ----
-uvx --python 3.14 not1mm@latest
+$ uvx --python 3.14 not1mm@latest
 ----
 
 It’ll download Python 3.14 into your virtual environment and run not1mm.
@@ -66,7 +66,7 @@ which version of not1mm you’d like to run.
 
 [,console]
 ----
-uvx --python 3.10 not1mm==23.5.19
+$ uvx --python 3.10 not1mm==23.5.19
 ----
 
 Pow! Enjoy the pain...

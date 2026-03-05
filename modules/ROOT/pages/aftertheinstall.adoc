@@ -31,14 +31,14 @@ launch the app like this:
 
 [,console]
 ----
-export QT_QPA_PLATFORM=wayland; not1mm
+$ export QT_QPA_PLATFORM=wayland; not1mm
 ----
 
 For a more permanent solution, you can place the line:
 
 [,console]
 ----
-export QT_QPA_PLATFORM=wayland
+$ export QT_QPA_PLATFORM=wayland
 ----
 
 in your home directories .bashrc file. Then after logging out and back
