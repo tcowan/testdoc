@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Installation :: Docs Site</title>
+    <meta name="generator" content="Antora 3.1.14">
+    <link rel="stylesheet" href="../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Docs Site</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="project-name" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">Project Name</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="listofcontests.html">List of Should-Be-Working Contests</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="installation.html">Installation</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="aftertheinstall.html">After the Install</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Project Name</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">Project Name</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="not1mmindex.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Project Name</a></li>
+    <li><a href="installation.html">Installation</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/tcowan/testdoc/modules/ROOT/pages/installation.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Installation</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section will hopefully get you started with installing Not1MM.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Not1MM requires:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Python 3.10&#43;</p>
+</li>
+<li>
+<p>PyQt6</p>
+</li>
+<li>
+<p>libportaudio2</p>
+</li>
+<li>
+<p>libxcb-cursor0 (maybe&#8230;&#8203; Depends on the distro)</p>
+</li>
+<li>
+<p>libxslt-devel (maybe&#8230;&#8203; Depends on the distro)</p>
+</li>
+<li>
+<p>libxml2-devel (maybe&#8230;&#8203; Depends on the distro)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You should install these through your distribution’s package manager
+before continuing.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_easy_and_fast_way_to_install_or_run_the_latest_version"><a class="anchor" href="#_the_easy_and_fast_way_to_install_or_run_the_latest_version"></a>The Easy and Fast way to install or run the latest version</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Step 1. Visit <a href="https://docs.astral.sh/uv/" class="bare">https://docs.astral.sh/uv/</a> and install uv.</p>
+</div>
+<div class="paragraph">
+<p>In short you run this in your terminal:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    •curl -LsSf https://astral.sh/uv/install.sh | sh</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Step 2. Tell it to run not1mm:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    •uvx not1mm@latest</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>or install it:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    •uv tool install not1mm@latest</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>That’s it&#8230;&#8203; It will go out, fetch the latest version of not1mm, setup a
+python virtual environment, get all the needed python libraries, cache
+everything and run not1mm. The first time takes a minute, but each time
+after, it’s lightning quick and it will automatically check for updates
+and run the latest version.</p>
+</div>
+<div class="paragraph">
+<p>But wait&#8230;&#8203; There’s more. If your distro is old and you’re stuck with an
+older version of python&#8230;&#8203; Say 3.10. And you want to see what all the
+cool kids are using. But you don’t want to corrupt your broke ol’ system
+by downloading the newest Python version. No problem. You can tell uv to
+run not1mm with any version of Python you’d like. Let’s say 3.14.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    •uvx --python 3.14 not1mm@latest</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It’ll download Python 3.14 into your virtual environment and run not1mm.
+Let’s say I was an idiot and pushed a new version and did’t fully test
+it. This happens a-lot&#8230;&#8203; We test in production. Or lets say you just
+want to see the pain that was back in 2023. No problem. Just tell it
+which version of not1mm you’d like to run.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    •uvx --python 3.10 not1mm==23.5.19</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pow! Enjoy the pain&#8230;&#8203;</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

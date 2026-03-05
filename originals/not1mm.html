@@ -1,0 +1,2177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.26">
+<title>Not1MM</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment the following line when using as a custom stylesheet */
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
+html{font-family:sans-serif;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+b,strong{font-weight:bold}
+abbr{font-size:.9em}
+abbr[title]{cursor:help;border-bottom:1px dotted #dddddf;text-decoration:none}
+dfn{font-style:italic}
+hr{height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,::before,::after{box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;line-height:1;position:relative;cursor:auto;-moz-tab-size:4;-o-tab-size:4;tab-size:4;word-wrap:anywhere;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:1px solid #dedede;word-wrap:normal}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre).nobreak{word-wrap:normal}
+:not(pre).nowrap{white-space:nowrap}
+:not(pre).pre-wrap{white-space:pre-wrap}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;border-radius:3px;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 .1em #fff;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin:0 auto;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border:1px solid #e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:none;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:hsla(0,0%,100%,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details{margin-left:1.25rem}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
+details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
+details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
+details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class=paragraph]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
+.sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class=highlight],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock pre>code{display:block}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans-serif;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt>blockquote,.quoteblock .quoteblock{padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin-left:0}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;font-size:.85rem;text-align:left;margin-right:0}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content{margin-bottom:1.25em;word-wrap:anywhere}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>*>tr>*{border-width:1px}
+table.grid-cols>*>tr>*{border-width:0 1px}
+table.grid-rows>*>tr>*{border-width:1px 0}
+table.frame-all{border-width:1px}
+table.frame-ends{border-width:1px 0}
+table.frame-sides{border-width:0 1px}
+table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-child>*{border-top-width:0}
+table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
+table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
+table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
+ul.checklist>li>p:first-child{margin-left:-1em}
+ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
+ul.inline{display:flex;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+td.hdlist2{word-wrap:anywhere}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:4px solid #fff;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);border-radius:50%;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]{border-bottom:1px dotted}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#header,#content,#footnotes,#footer{max-width:none}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media amzn-kf8,print{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+</head>
+<body class="article">
+<div id="header">
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_not1mm">Not1MM</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The world’s number 1 unfinished contest logger. ^*According to my
+daughter Corinna.^</p>
+</div>
+<div class="paragraph">
+<p>Not1MM’s interface is a blatant rip-off of N1MM. It is NOT N1MM and any
+problem you have with this software should in no way reflect on their
+software.</p>
+</div>
+<div class="sect2">
+<h3 id="_not1mm_what_is_it">Not1MM. What is it?</h3>
+<div class="paragraph">
+<p>Not1MM attempts to be a usable ham/amateur radio contest logger. It’s
+written in Python 3.10&#43; and uses Qt6 framework for the graphical
+interface and SQLite for the database.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_why">The Why</h3>
+<div class="paragraph">
+<p><strong>Currently, this exists for my own personal enjoyment</strong>. I recently
+retired after 35&#43; years working for ’The Phone Company’, GTE →
+Verizon → Frontier. And being a Gentleman of Leisure, I needed something
+to do in my free time. I am a casual contester and could not find any
+contesting software for Linux that I wanted to use. There is <strong>Tucnak</strong>,
+available at <em>HTTP://tucnak.nagano.cz/</em> which is very robust and mature.
+It just wasn’t for me.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_target_environment">Target Environment</h3>
+<div class="paragraph">
+<p>The primary target for this application is Linux. It may be able to run
+on other platforms, BSD and Windows. But I don’t have a way, or desire,
+to directly support them. I’ve recently purchased an M4 Mac Mini, So
+I’ll probably put more effort into that platform as well.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_current_state_or_code_maturity">Current State, or Code Maturity</h3>
+<div class="paragraph">
+<p>Not1MM is, at times, fairly stable. Recently, it would seem that I’m
+desperately trying to change that. The current focus of development is
+adding support for Multi Multi contest operations. It is something that
+I have no practical experience in. So you can expect the same quality of
+code fit and finish.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_known_issues">Known Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Hamlib before 4.6.3 had a problem with sending CW and changing/reading
+the keying speed.</p>
+</li>
+<li>
+<p>wfview before version 2.2 has issues with frequency reporting and CW
+sending.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_list_of_should_be_working_contests">List of Should-Be-Working Contests</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>3</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>General Logging</p>
+</li>
+<li>
+<p>10 10 Fall CW</p>
+</li>
+<li>
+<p>10 10 Spring CW</p>
+</li>
+<li>
+<p>10 10 Summer Phone</p>
+</li>
+<li>
+<p>10 10 Winter Phone</p>
+</li>
+<li>
+<p>ARI 40 80</p>
+</li>
+<li>
+<p>ARI DX</p>
+</li>
+<li>
+<p>ARRL 10M</p>
+</li>
+<li>
+<p>ARRL 160M</p>
+</li>
+<li>
+<p>ARRL DX CW, SSB</p>
+</li>
+<li>
+<p>ARRL Field Day</p>
+</li>
+<li>
+<p>ARRL RTTY Roundup</p>
+</li>
+<li>
+<p>ARRL Sweepstakes</p>
+</li>
+<li>
+<p>ARRL VHF</p>
+</li>
+<li>
+<p>CQ 160</p>
+</li>
+<li>
+<p>CQ WPX</p>
+</li>
+<li>
+<p>CQ World Wide</p>
+</li>
+<li>
+<p>CWOps CWT, CWO</p>
+</li>
+<li>
+<p>DARC Xmas</p>
+</li>
+<li>
+<p>DARC VHF</p>
+</li>
+<li>
+<p>EA Majistad CW</p>
+</li>
+<li>
+<p>EA Majistad SSB</p>
+</li>
+<li>
+<p>EA RTTY</p>
+</li>
+<li>
+<p>ES FIELD DAY HF</p>
+</li>
+<li>
+<p>ES OPEN HF</p>
+</li>
+<li>
+<p>Estonian LL Cup</p>
+</li>
+<li>
+<p>Helvetia</p>
+</li>
+<li>
+<p>IARU Field day</p>
+</li>
+<li>
+<p>IARU HF</p>
+</li>
+<li>
+<p>ICWC MST</p>
+</li>
+<li>
+<p>Japan International DX</p>
+</li>
+<li>
+<p>K1USN Slow Speed Test</p>
+</li>
+<li>
+<p>Labre RS Digi</p>
+</li>
+<li>
+<p>LZ DX</p>
+</li>
+<li>
+<p>NAQP</p>
+</li>
+<li>
+<p>Phone Weekly Test</p>
+</li>
+<li>
+<p>RAEM</p>
+</li>
+<li>
+<p>RAC Canada Day</p>
+</li>
+<li>
+<p>RandomGram</p>
+</li>
+<li>
+<p>REF CW, SSB</p>
+</li>
+<li>
+<p>RSGB 80M CC</p>
+</li>
+<li>
+<p>SAC CW, SSB</p>
+</li>
+<li>
+<p>SPDX</p>
+</li>
+<li>
+<p>Stew Perry Top band</p>
+</li>
+<li>
+<p>UK/EI DX</p>
+</li>
+<li>
+<p>Weekly RTTY</p>
+</li>
+<li>
+<p>Work All Germany</p>
+</li>
+<li>
+<p>Winter Field Day</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_other_not_so_supported_contests">Other not so Supported Contests</h3>
+<div class="paragraph">
+<p>Of note, state QSO parties. I haven’t worked any yet. And no one has
+submitted a PR adding one&#8230;&#8203; So there you go. In the near future I’ll
+probably add California, guess where I live, and the 4 states QSO party.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation">Installation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section will hopefully get you started with installing Not1MM.</p>
+</div>
+<div class="sect2">
+<h3 id="_prerequisites">Prerequisites</h3>
+<div class="paragraph">
+<p>Not1MM requires:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Python 3.10&#43;</p>
+</li>
+<li>
+<p>PyQt6</p>
+</li>
+<li>
+<p>libportaudio2</p>
+</li>
+<li>
+<p>libxcb-cursor0 (maybe&#8230;&#8203; Depends on the distro)</p>
+</li>
+<li>
+<p>libxslt-devel (maybe&#8230;&#8203; Depends on the distro)</p>
+</li>
+<li>
+<p>libxml2-devel (maybe&#8230;&#8203; Depends on the distro)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You should install these through your distribution’s package manager
+before continuing.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_easy_and_fast_way_to_install_or_run_the_latest_version">The Easy and Fast way to install or run the latest version</h3>
+<div class="paragraph">
+<p>Step 1. Visit <a href="https://docs.astral.sh/uv/" class="bare">https://docs.astral.sh/uv/</a> and install uv.</p>
+</div>
+<div class="paragraph">
+<p>In short you run this in your terminal:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    •curl -LsSf https://astral.sh/uv/install.sh | sh</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Step 2. Tell it to run not1mm:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    •uvx not1mm@latest</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>or install it:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    •uv tool install not1mm@latest</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>That’s it&#8230;&#8203; It will go out, fetch the latest version of not1mm, setup a
+python virtual environment, get all the needed python libraries, cache
+everything and run not1mm. The first time takes a minute, but each time
+after, it’s lightning quick and it will automatically check for updates
+and run the latest version.</p>
+</div>
+<div class="paragraph">
+<p>But wait&#8230;&#8203; There’s more. If your distro is old and you’re stuck with an
+older version of python&#8230;&#8203; Say 3.10. And you want to see what all the
+cool kids are using. But you don’t want to corrupt your broke ol’ system
+by downloading the newest Python version. No problem. You can tell uv to
+run not1mm with any version of Python you’d like. Let’s say 3.14.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    •uvx --python 3.14 not1mm@latest</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It’ll download Python 3.14 into your virtual environment and run not1mm.
+Let’s say I was an idiot and pushed a new version and did’t fully test
+it. This happens a-lot&#8230;&#8203; We test in production. Or lets say you just
+want to see the pain that was back in 2023. No problem. Just tell it
+which version of not1mm you’d like to run.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    •uvx --python 3.10 not1mm==23.5.19</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pow! Enjoy the pain&#8230;&#8203;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_after_the_install">After the Install</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can now open a new terminal and type ‘not1mm‘. On it’s first run, it
+may or may not install a lovely non AI generated icon, which you can
+later click on to launch the application.</p>
+</div>
+<div class="sect2">
+<h3 id="_you_may_or_may_not_get_a_warning_message_like">You May or May Not Get a Warning Message Like</h3>
+<div class="literalblock">
+<div class="content">
+<pre>WARNING: The script not1mm is installed in '/home/mbridak/.local/bin',
+which is not on PATH. Consider adding this directory to PATH or,
+if you prefer to suppress this warning, use --no-warn-script-location.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you do, log out and back in or reboot.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_or_this_fan_favorite">Or this Fan Favorite</h3>
+<div class="literalblock">
+<div class="content">
+<pre>Warning: Ignoring XDG\_SESSION\_TYPE=wayland on Gnome.
+Use QT\_QPA\_PLATFORM=wayland to run on Wayland anyway.
+qt.qpa.plugin: Could not load the Qt platform plugin "xcb"
+even though it was found. This application failed to start
+because no Qt platform plugin could be initialized.
+Reinstalling the application may fix this problem.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can use your package manager to load <strong>libxcb-cursor0</strong>.<br>
+If that is not an option, you can export an environment variable and
+launch the app like this:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>mbridak@vm:~$ export QT_QPA_PLATFORM=wayland; not1mm</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For a more permanent solution, you can place the line:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>export QT_QPA_PLATFORM=wayland</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>in your home directories .bashrc file. Then after logging out and back
+in you should be able to launch it normally.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_update_your_cty_and_scp_files">Update Your CTY and SCP Files</h3>
+<div class="paragraph">
+<p>Before operating in a contest, you might want to update the CTY and SCP
+files. You can do this by choosing <strong>FILE &gt;&gt; Update CTY</strong> and <strong>FILE
+&gt;&gt; Update MASTER.SCP</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_various_file_locations">Various File Locations</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_data_files">Data Files</h3>
+<div class="paragraph">
+<p>If your system has an ‘XDG_DATA_HOME‘ environment variable set,
+the database and CW macro files can be found there. Otherwise they will
+be found at ‘yourhome/.local/share/not1mm‘</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration_files">Configuration Files</h3>
+<div class="paragraph">
+<p>Configuration file(s) can be found at the location defined by</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>XDG_CONFIG_HOME</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Otherwise they will be found at</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>yourhome/.config/not1mm</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_database">The Database</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_why">Why</h3>
+<div class="paragraph">
+<p>The database holds&#8230;&#8203; wait for it&#8230;&#8203; data&#8230;&#8203; I know, shocker right? A
+database can hold one or many contest logs. It also holds the station
+information, everything shown in the Station Settings dialog. You can
+have one database for the rest of your life. Filled with hundreds of
+contests you’ve logged. Or, you can create a new database to hold just
+one contest. You do you Boo.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_first_one_is_free">The First One is Free</h3>
+<div class="paragraph">
+<p>On initial launch, a database is created called ‘ham.db‘. This and all
+future databases are located in the data directory mentioned above.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_why_limit_yourself">Why Limit Yourself?</h3>
+<div class="paragraph">
+<p>You can create a new database by selecting <strong>File &gt;&gt; New Database</strong>
+from the main window, and give it a snazzy name. Why limit yourself?
+Hell, create one every day for all I care. You can manage your own
+digital disaster.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_revisiting_an_old_friend">Revisiting an Old Friend</h3>
+<div class="paragraph">
+<p>You can select a previously created database by selecting: <strong>File &gt;&gt;
+Open Database</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_station_settings_dialog">Station Settings Dialog</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After initial run of the program or when creating a new database, you
+will need to fill out the Station Settings dialog that will pop up.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/settings.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>You can fill it out if you want to. You can leave our friends behind
+’Cause your friends don’t fill, and if they don’t fill. Well, they’re no
+friends of mine.</p>
+</div>
+<div class="paragraph">
+<p>You can fill. You can fill. Everyone look at your keys. <em>You had to be
+around in the 80’s</em></p>
+</div>
+<div class="sect2">
+<h3 id="_changing_station_information">Changing Station Information</h3>
+<div class="paragraph">
+<p>Station information can be changed any time by going to<br>
+<strong>File &gt;&gt; Station Settings</strong> and editing the information.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_selecting_a_contest">Selecting a Contest</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_selecting_a_new_contest">Selecting a New Contest</h3>
+<div class="paragraph">
+<p>Select <strong>File &gt;&gt; New Contest</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/new_contest.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_selecting_an_existing_contest_as_the_current_contest">Selecting an Existing Contest as the Current Contest</h3>
+<div class="paragraph">
+<p>Select <strong>File &gt;&gt; Open Contest</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/select_contest.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_editing_existing_contest_parameters">Editing Existing Contest Parameters</h3>
+<div class="paragraph">
+<p>Edit the parameters of a previously defined contest by selecting it as
+the current contest. Then select <strong>File &gt;&gt; Edit Current Contest</strong>.
+Click ‘OK‘ to save the new values and reload the contest. ‘Cancel‘ to
+keep the existing parameters.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_configuration_settings">Configuration Settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To setup CAT control, CW keyer, and callsign lookups select <strong>File &gt;&gt;
+Configuration Settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The tabs for groups and N1MM are disabled and are for future expansion.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/configuration_settings.png" alt="image"></span></p>
+</div>
+<div class="sect2">
+<h3 id="_callsign_lookup">Callsign Lookup</h3>
+<div class="paragraph">
+<p>Two services are supported: QRZ and HamQTH. Username and password are
+required so enter that information here.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_soundcard">Soundcard</h3>
+<div class="paragraph">
+<p>Choose the sound output device for the voice keyer.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cat_control">CAT Control</h3>
+<div class="paragraph">
+<p>Under the ‘CAT‘ tab, you can choose one of the following:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>‘rigctld‘ normally with an IP of ‘127.0.0.1‘ and a port of ‘4532‘</p>
+</li>
+<li>
+<p>‘flrig‘ normally with an IP of ‘127.0.0.1‘ and a port of ‘12345‘</p>
+</li>
+<li>
+<p>‘None‘ is always an option (but is it really?).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A small transceiver icon changes color to indicate the CAT status.
+Green: Connected; Red: Not connected; Grey: Neither.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cw_keyer_interface">CW Keyer Interface</h3>
+<div class="paragraph">
+<p>Under the ‘CW‘ tab, there are three options:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>‘cwdaemon‘ normally uses IP ‘127.0.0.1‘ and port ‘6789‘</p>
+</li>
+<li>
+<p>‘pywinkeyer‘ normally uses IP ‘127.0.0.1‘ and port ‘8000‘</p>
+</li>
+<li>
+<p>‘CAT‘ can be used if your radio supports it. Morse characters are sent
+via ‘rigctld‘.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cluster">Cluster</h3>
+<div class="paragraph">
+<p><span class="image"><img src="pic/configuration_cluster.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Under the ‘Cluster‘ tab you can change the default AR Cluster server,
+port, and filter settings used for the bandmap window.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_n1mm_packets">N1MM Packets</h3>
+<div class="paragraph">
+<p>Work has started on N1MM UDP packets. So far just RadioInfo,
+contactinfo, contactreplace and contactdelete.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/n1mm_packet_config.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>When entering IP and corresponding Port, connect them with a colon ’:’
+as shown above. You can enter multiple pairs on the same line by
+separating them with a space ’ ’.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bands">Bands</h3>
+<div class="paragraph">
+<p>You can define which bands appear in the main window. Those with
+checkmarks will appear. Those without will not.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/configure_bands.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_options">Options</h3>
+<div class="paragraph">
+<p>A variety of features can be enabled in the Options tab:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Use Enter Sends Message (ESM) and configure its function keys.</p>
+</li>
+<li>
+<p>Allow the program to access Call History info.</p>
+</li>
+<li>
+<p>Periodically send XML score to an online scoreboard.</p>
+</li>
+<li>
+<p>Clear the input fields in S&amp;P mode when the VFO frequency changes.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/configuration_options.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Three real-time scoreboards are supported:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Real Time Contest Server at hamscore.com</p>
+</li>
+<li>
+<p>Contest Online ScoreBoard at contestonlinescore.com</p>
+</li>
+<li>
+<p>Live Contest Score at contest.run</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_logging_digital_contacts">Logging Digital Contacts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Not1MM listens for WSJT-X UDP traffic on the Multicast address
+224.0.0.1:2237. This should work by default with Not1MM. That’s good
+because I’m lazy.<br>
+Not1MM watches for fldigi QSOs by monitoring UDP traffic on
+127.0.0.1:9876.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/fldigi_adif_udp.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>The F1–F12 function keys are sent to fldigi via XMLRPC. Fldigi is placed
+into TX mode, the message is sent, and a \(\wedge\)r is appended
+to place it back into RX mode.</p>
+</div>
+<div class="paragraph">
+<p>Unlike WSJT, fldigi needs configuration of some settings. The XMLRPC
+interface needs to be active. In fldigi’s config dialog, go to <strong>CONTESTS
+&gt;&gt; General &gt;&gt; CONTEST</strong> and select Generic Contest. Make sure the
+Text Capture Order field says CALL EXCHANGE.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_operating_multi_multi">Operating Multi-Multi</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Work is underway on Multi-Multi contest operations. There is a companion
+project <strong>renfield</strong><br>
+<em><a href="https://github.com/mbridak/renfield" class="bare">https://github.com/mbridak/renfield</a></em> that will be needed for this. The
+idea is to have a separate slave server running, preferably on another
+computer that’s on the same network as the contesting PCs. This server
+will handle all the database CRUD operations. It will assign serial
+numbers, check for duplivate contacts, and generate a Cabrillo file.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/renfield_cli.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>This is a very lightweight terminal application that can be easily
+hosted on a Raspberry Pi or similar device. In a pinch it can be run
+alongside Not1MM on one of the contesting machines but use caution. You
+could even use this while operating alone as an automated backup. A copy
+of the log would be available in the event of a logging computer
+failure.</p>
+</div>
+<div class="sect2">
+<h3 id="_network_settings_for_multi_multi">Network Settings for Multi-Multi</h3>
+<div class="paragraph">
+<p>In the configuration dialog under the group tab, select Connect to
+server.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/configuration_group.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>One computer needs to be the master station. The master station will
+tell the renfield server what contest is being run.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_contest_settings_for_multi_multi">Contest Settings for Multi-Multi</h3>
+<div class="paragraph">
+<p>In Contest Settings, if the Operator is set to "MULTI-OP" and the
+Transmitter category is not "ONE" or "SWL", Not1MM will ask the renfield
+server for serial numbers and dupe checks.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/multi_multi.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sending_cw">Sending CW</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_sending_cw_macros">Sending CW Macros</h3>
+<div class="paragraph">
+<p>Predefined CW messages can be sent with function keys F1–F12. See the
+following section on Editing Macro Keys.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_auto_cq">Auto CQ</h3>
+<div class="paragraph">
+<p>Pressing ‘SHIFT-F1‘ activates the Auto CQ mode. The program is placed in
+the Run state and the F1 macro is sent then resent after the Auto CQ
+delay interval. A visual indicator appears to the upper left of the F1
+macro key to alert that Auto CQ is active. A small progress bar
+indicates when F1 will fire next.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/auto_cq_indicator.png" alt="image"></span></p>
+</div>
+<div class="sect3">
+<h4 id="_setting_the_delay">Setting the delay</h4>
+<div class="paragraph">
+<p>The Auto CQ delay interval can be changed in the ‘Options‘ tab of the
+Configuration settings. This value is the sum of the F1 macro duration
+<em>plus</em> the desired pause time in which stations can respond. If the
+program is in S&amp;P mode when Auto CQ is enabled, it will automatically
+switch to RUN mode.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sending_cw_free_form">Sending CW Free Form</h3>
+<div class="paragraph">
+<p>Freeform text is sent by pressing <strong>CTRL-SHIFT-K</strong>. An entry field appears
+at the bottom of the window for typing from the keyboard terminal. The
+text is sent by either pressing <strong>CTRL-SHIFT-K</strong> or using the Enter key to
+close the entry field.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_editing_macro_keys">Editing Macro Keys</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To edit the macro keys, choose <strong>File &gt;&gt; Edit Macros</strong>. This will open
+the system default text editor and display the current active macros.
+The current operating mode (CW, SSB or RTTY) and contest will
+automatically select the corresponding macro file. Each contest and mode
+has its own unique copy of the macros – these are not global settings.
+When finished editing, save the file and close the editor.</p>
+</div>
+<div class="paragraph">
+<p>Alternatively, macro files can be directly edited outside the not1mm
+program. On Linux, individual contest directories are located in
+‘.local/share/not1mm/‘. Refer to the <strong>Data Files</strong> section above.</p>
+</div>
+<div class="paragraph">
+<p>After editing and saving the macro file, any changes are enabled by
+toggling between the ‘Run‘ and ‘S&amp;P‘ states.</p>
+</div>
+<div class="sect2">
+<h3 id="_macro_substitutions">Macro Substitutions</h3>
+<div class="paragraph">
+<p>The macro instruction set is shown below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top"><strong>Macro</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Substitution</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{MYCALL}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send my station callsign.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{HISCALL}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the callsign of the other station.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{SNT}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send 5NN (cw) or 599 (ssb)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{SENTNR}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the SentNR field.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{EXCH}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the Exchange field; contest must be defined.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{PREVNR}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the previous serial number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{OTHER1}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the SentNR/Name field without altering it.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{OTHER2}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send the Comment field without altering it.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{LOGIT}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Log the contact after macro pressed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{TX}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Switch to transmit mode (PTT ON) - NOTE: the ‘Sends‘ macros
+will toggle PTT ON/OFF</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{RX}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Switch to receive mode (PTT OFF).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{TX/RX}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle between transmit/receive (PTT) mode.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{MARK}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Highlight the current call in the band map.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{SPOT}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spot the current call to the cluster.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{RUN}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Change to Run mode.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{SANDP}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Change to S&amp;P mode.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{WIPE}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clear all the input fields.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">#</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sends serial number.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">{VOICE1} - {VOICE10}</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Uses ‘rigctld‘ to send voice macros
+stored in the radio.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"> RI:</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send Rig specific codes. See Macro control of radio functions.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"> \(\wedge\)M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">in a RTTY macro will be replaced with a newline
+character.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_macro_use_with_voice">Macro Use with Voice</h3>
+<div class="paragraph">
+<p><strong>VOICE1–VOICE10</strong><br>
+If you use rigctld and your radio supports it, you can use the macros
+VOICE1, VOICE2, etc to send the recorded audio messages stored in the
+radio.</p>
+</div>
+<div class="sect3">
+<h4 id="_voice_macro_wav_files">Voice macro .wav files</h4>
+<div class="paragraph">
+<p>The macros used with voice can also linked to .wav files. Specify the
+filename, but exclude the .wav extension. The filename must be lowercase
+and enclosed in brackets. For example ‘[cq]‘ will play ‘cq.wav‘,
+‘[again]‘ will play ‘again.wav‘. The .wav files are stored in
+the data directory. See <strong>Various data file locations</strong> above for the
+location of these data files. For me, the macro ‘[cq]‘ will play</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>/home/mbridak/.local/share/not1mm/K6GTE/cq.wav</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>The default .wav files are not the ones you will want to use. They
+sound like an idiot.</strong> Use a program like Audacity or similar to record
+new .wav files in your own voice.</p>
+</div>
+<div class="paragraph">
+<p>NATO phonetic .wav files are also provided for each letter and number.
+Their use can be illustrated with an example from the CQWW SSB Contest
+operating from Zone 3. The callsign K5TUX is entered and the following
+macro key is activated: ‘HISCALL SNT SENTNR‘. The program then sends
+this sequence of audio phonetics: KILO FIVE TANGO UNIFORM X-RAY FIVE
+NINE NINE THREE.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_macro_control_of_radio_functions">Macro control of radio functions</h4>
+<div class="paragraph">
+<p>Macros can also be used to send CAT/CI-V control codes to the radio. To
+make use of this feature, start the command with the letters "RI" and a
+colon, followed by the desired command. If the command is ASCII text
+(for example, for Yaesu radios), just enter the text after "RI:". For
+binary codes, enter hexadecimal values separated by spaces.</p>
+</div>
+<div class="paragraph">
+<p>For example, to enable the auto-notch filter on a Yaesu FT-710, the
+command would be "RI:BC01;". To do the same on an Icom 7300, the command
+would be something like "RI:FE FE 94 E0 16 41 01 FD". Refer to the
+operating manual or online sources for the correct command syntax. Note
+that CAT/CI-V command macros are only available when either FLRig or
+rigctld (HamLib) are being used for transceiver control.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cty_dat_and_qrz_for_distance_and_bearing">cty.dat and QRZ for Distance and Bearing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When a callsign is entered, a lookup is done in the cty.dat file to
+identify the country of origin, geographic center, CQ zone, and ITU
+region. Great circle calculations are then done to determine the heading
+and distance from the home grid square to the geographic center of the
+DX station. This information is displayed at the bottom left.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/heading_distance.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Next, a request is made to qrz.com for the grid square of the callsign.
+If there is a response, more accurate distance and bearing numbers are
+displayed. The ‘Regional‘ text is replaced with the station’s specific
+6-digit grid square as shown below.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/heading_distance_qrz.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_uses_for_the_callsign_field">Other Uses for the Callsign Field</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>The SPACE bar must be pressed to enable any of the following
+functions.</strong></p>
+</div>
+<div class="sect2">
+<h3 id="_frequency">Frequency</h3>
+<div class="paragraph">
+<p><strong>Frequency</strong> Enter a frequency in kHz. This changes the active logging
+band. If CAT control is enabled, the specified frequency will change the
+transceiver VFO.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_modes">Modes</h3>
+<div class="paragraph">
+<p><strong>CW, SSB, RTTY</strong> Sets the mode being logged. If CAT control is enabled,
+the mode changes on the radio.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_change_operator">Change Operator</h3>
+<div class="paragraph">
+<p><strong>OPON</strong> Specify the operator currently logging.<br>
+<br>
+<strong>Important: Press the SPACE bar after making any of the above entries.</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_windows">The Windows</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_the_main_window">The Main Window</h3>
+<div class="paragraph">
+<p><span class="image"><img src="pic/mainwithcallouts.png" alt="image"></span></p>
+</div>
+<div class="sect3">
+<h4 id="_keyboard_commands">Keyboard Commands</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-center valign-top"><strong>Key</strong></th>
+<th class="tableblock halign-left valign-top"><strong>Result</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Esc</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stop the cwdaemon from sending Morse characters.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">PgUp</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Increase the CW sending speed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">PgDown</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Decrease the CW sending speed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Arrow-Up</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jump to the next spot above the current VFO cursor in the
+bandmap window (CAT Required).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Arrow-Down</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jump to the next spot below the current VFO cursor in the
+bandmap window (CAT Required).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TAB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move cursor to the right one field.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Shift-Tab</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Move cursor left One field.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">SPACE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When in the callsign field, move the input to the next field in
+the exchange.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Enter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submit entered data to the log, unless ESM is enabled.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">F1-F12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Send (CW/RTTY/Voice) macros.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CTRL-S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spot Callsign to the cluster.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CTRL-M</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Highlight Callsign in the bandmap window.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CTRL-G</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tune to a spot matching partial text in the callsign entry
+field (CAT Required).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CTRL-SHIFT-K</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open CW text input field.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CTRL-=</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Log the contact without sending the ESM macros.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CTRL-W</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clear the input fields of any text.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">ALT-B</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle the bandmap window.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">ALT-C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle the Check Partial window.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">ALT-L</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle the QSO Log window.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">ALT-R</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle the Rate window.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">ALT-S</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle the Statistics window.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock">ALT-V</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Toggle the VFO window.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_log_window">The Log Window</h3>
+<div class="paragraph">
+<p><strong>Window &gt;&gt; Log Window</strong></p>
+</div>
+<div class="paragraph">
+<p>The Log Window gets updated automatically when a contact is entered. The
+top half is a chronological list of all contacts.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/logdisplay.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>The bottom half of the Log Window displays logged contacts sorted by
+complete or partial matches to characters in the call entry field. The
+columns displayed in the log window depend on the current active
+contest.</p>
+</div>
+<div class="sect3">
+<h4 id="_editing_a_contact">Editing a Contact</h4>
+<div class="paragraph">
+<p><span class="image"><img src="pic/edit_cell.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Double-click a cell in the log window to edit its contents.
+Right-clicking on a cell brings up the edit dialog.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/edit_dialog.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>You cannot directly edit the multiplier status of a contact. See the
+next section on recalculating multipliers. When editing a logged
+callsign, it’s a good idea to check if other data such as the WPX field
+are still valid.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_bandmap_window">The Bandmap Window</h3>
+<div class="paragraph">
+<p><strong>Window &gt;&gt; Bandmap</strong>‘</p>
+</div>
+<div class="paragraph">
+<p>The bandmap displays spots drawn from the Cluster node specified in the
+Configuration Settings. Enter your callsign and press the Connect
+button. When CAT is enabled, the bandmap will track with the VFO. This
+is still a work in progress.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/bandmap.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>The VFO frequency is indicated with a small green triangle above the
+tick marks. A vertical blue bar displays the receive filter bandwidth if
+available via CAT.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/VFO_and_bandwidth_markers.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Clicking on a spot sets the VFO and populates the callsign field.
+Previously worked callsigns are displayed in red. Callsigns marked with
+CTRL-M are highlighted in yellow. A small icon after the callsign
+indicates the mode as follows:<br>
+Primary Modes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>\(\bigcirc\) CW</p>
+</li>
+<li>
+<p>\(\bigodot\) FT*</p>
+</li>
+<li>
+<p>\(\circledcirc\) RTTY</p>
+</li>
+<li>
+<p>\(\bigwedge\) Beacon</p>
+</li>
+<li>
+<p>@ Everything else</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Secondary Modes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>POTA</p>
+</li>
+<li>
+<p>SOTA</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The icon is followed by the UTC time of the spot. The screenshot below
+shows CW and FT8 spots on the 20m band.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/bandmap_icons.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_check_partial_window">The Check Partial Window</h3>
+<div class="paragraph">
+<p><strong>Window &gt;&gt; Check Partial Window</strong></p>
+</div>
+<div class="paragraph">
+<p>As a callsign is entered, the Check Window displays potential matches
+from the MASTER.SCP file, the local log, and recent telnet cluster
+spots. The MASTER.SCP column shows candidates with 3 or more matching
+characters indexed from the start of the callsign string. The local log
+and telnet columns match character strings of any length. Clicking on
+any of these candidate callsigns will automatically populate the
+callsign field.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/checkwindow.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_rate_window">The Rate Window</h3>
+<div class="paragraph">
+<p><strong>Window &gt;&gt; Rate Window</strong></p>
+</div>
+<div class="paragraph">
+<p>This window contains QSO rates and counts.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/rate_window.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_dxcc_window">The DXCC window</h3>
+<div class="paragraph">
+<p><strong>Window &gt;&gt; DXCC</strong></p>
+</div>
+<div class="paragraph">
+<p>This window displays a table of worked DXCC entities arranged by band.
+When optional automatic scrolling is enabled, entering a callsign will
+scroll to the corresponding DXCC entity prefix.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/dxcc_window.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_zone_window">The Zone window</h3>
+<div class="paragraph">
+<p><strong>Window &gt;&gt; Zone</strong></p>
+</div>
+<div class="paragraph">
+<p>This window functions the same way as the DXCC window, but for CQ or ITU
+zones. When automatic scrolling is enabled, check the appropriate radio
+button to select CQ or ITU zones as determined by the DX contest
+requirements.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_rotator_window_work_in_progress">The Rotator Window (Work In Progress)</h3>
+<div class="paragraph">
+<p><strong>Window &gt;&gt; Rotator</strong></p>
+</div>
+<div class="paragraph">
+<p>The Rotator window is a work in progress. The Rotator window relies on
+the functionality of the rotctld daemon. It connects to rotctld on
+address 127.0.0.1 and port 4533. You can change this if needed in the
+configuration dialog under the rotator tab. If started and there is no
+connection, you will see this:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/rot1.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Once there is a connection to rotctld, the current azimuth of the
+antenna is obtained and you will see a direction needle apear:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/rot2.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Once a call is entered and the bearing to contact is calculated you will
+see a needle appear:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/rot3.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>At this time you can click on the ’Move’ button to point your antenna at
+the contact. A list of other buttons follows below.</p>
+</div>
+<div class="paragraph">
+<p><strong>Move</strong>: Rotates the antenna at the target.</p>
+</div>
+<div class="paragraph">
+<p><strong>Stop</strong>: Stops the current movement.</p>
+</div>
+<div class="paragraph">
+<p><strong>Park</strong>: Parks the antenna.</p>
+</div>
+<div class="paragraph">
+<p><strong>N,S,W,E</strong>: Points the antenna to one of the 4 cardinal directions.</p>
+</div>
+<div class="paragraph">
+<p>You can also move the rotator by clicking in the globe where you want
+the antenna to point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_the_remote_vfo_window">The Remote VFO Window</h3>
+<div class="paragraph">
+<p>When operating a remote station, the transceiver VFO can be controlled
+using inexpensive hardware in tandem with the Remote VFO window. A
+description of the hardware can be found at the following link:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    https://github.com/mbridak/not1mm/blob/master/usb\_vfo\_knob/vfo.md</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Communicate with it using the VFO Window: <strong>Window &gt;&gt; VFO</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/vfo.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cabrillo">Cabrillo</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Click on <strong>File &gt;&gt; Generate Cabrillo</strong></p>
+</div>
+<div class="paragraph">
+<p>The file will be placed in your home directory. The name will be in the
+format of:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>`StationCall`_`ContestName`_`CurrentDate`_`CurrentTime`.log</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>So for me, it would look like:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>K6GTE\_CANADA-DAY\_2023-09-04\_07-47-05.log</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adif">ADIF</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>File &gt;&gt; Generate ADIF</strong></p>
+</div>
+<div class="paragraph">
+<p>Boom&#8230;&#8203; ADIF</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>`StationCall`_`ContestName`_`Date`_`Time`.adi</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_recalulate_mults">Recalulate Mults</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The program automatically updates the score as each new entry is logged.
+There may be a situation where a station has been logged incorrectly.
+This QSO can be easily edited as described above, but this may add or
+remove a multiplier. To remedy this and correct the score, a Recalculate
+Mults function is located in the Misc menu. The Cabrillo/ADIF files must
+be regenerated.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_esm">ESM</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I caved and started working on ESM or Enter Sends Message. To test it
+out you can go to <strong>FILE &gt;&gt; Configuration Settings</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/configuration_options.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Check the mark to Enable ESM and tell it which function keys do what.
+The keys will need to have the same function in both Run and S&amp;P modes.
+The function keys will highlight green depending on the state of the
+input fields. The green keys will be sent if you press the Enter key.
+You should use the Space bar to move to another field.</p>
+</div>
+<div class="paragraph">
+<p>The contact will be automatically logged once all the needed info is
+collected and the QRZ (for Run) or Exchange (for S&amp;P) is sent.</p>
+</div>
+<div class="sect2">
+<h3 id="_run_states">Run States</h3>
+<div class="sect3">
+<h4 id="_cq">CQ</h4>
+<div class="paragraph">
+<p><span class="image"><img src="pic/esm_cq.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_call_entered_send_his_call_and_the_exchange">Call Entered Send His Call and the Exchange</h4>
+<div class="paragraph">
+<p><span class="image"><img src="pic/esm_withcall.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_empty_exchange_field_send_agn_till_you_get_it">Empty Exchange Field Send AGN Till You Get It</h4>
+<div class="paragraph">
+<p><span class="image"><img src="pic/esm_empty_exchange.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_exchange_field_filled_send_tu_qrz_and_logs_it">Exchange Field Filled, Send TU QRZ and Logs it</h4>
+<div class="paragraph">
+<p><span class="image"><img src="pic/esm_qrz.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sp_states">S&amp;P States</h3>
+<div class="sect3">
+<h4 id="_with_his_call_entered_send_your_call">With His Call Entered, Send Your Call</h4>
+<div class="paragraph">
+<p><span class="image"><img src="pic/esm_sp_call.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_if_no_exchange_entered_send_agn">If No Exchange Entered Send AGN</h4>
+<div class="paragraph">
+<p><span class="image"><img src="pic/esm_sp_agn.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_with_exchange_entered_send_your_exchange_and_log_it">With Exchange Entered, Send Your Exchange and Log it</h4>
+<div class="paragraph">
+<p><span class="image"><img src="pic/esm_sp_logit.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_call_history_files">Call History Files</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To use Call History files, go to <strong>FILE &gt;&gt; Configuration Settings</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/configuration_options.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Place a check in the ‘Use Call History‘ box. Call history files are very
+specific to the contest you are working. Example files can be obtained
+from <a href="https://n1mmwp.hamdocs.com/mmfiles/categories/callhistory/" class="bare">https://n1mmwp.hamdocs.com/mmfiles/categories/callhistory/</a>?
+website. They have a searchbox so you can find the contest you are
+looking for. If you are feeling masocistic, you can craft your own. The
+general makeup of the file is a header defining the fields to be used,
+followed by by lines of comma separated data.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_creating_your_own_call_history_files">Creating your own Call History files</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can use <strong>adif2callhistory</strong> at
+<em><a href="https://github.com/mbridak/adif2callhistory" class="bare">https://github.com/mbridak/adif2callhistory</a></em> to generate your own call
+history file from your ADIF files. An example file excerpt looks like:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>!!Order!!,Call,Name,State,UserText,
+#
+# 0-This is helping file, LOG what is sent.
+# 1-Last Edit,2024-08-18
+# 2-Send any corrections direct to ve2fk@arrl.net
+# 3-Updated from the log of Marsh/KA5M
+# 4-Thanks Bjorn SM7IUN for his help.
+# 5-Thanks
+# NAQPCW
+# NAQPRTTY
+# NAQPSSB
+# SPRINTCW
+# SPRINTLADD
+# SPRINTNS
+# SPRINTRTTY
+# SPRINTSSB
+AA0AC,DAVE,MN,Example UserText
+AA0AI,STEVE,IA,
+AA0AO,TOM,MN,
+AA0AW,DOUG,MN,
+AA0BA,,TN,
+AA0BR,,CO,
+AA0BW,,MO,</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The first line is the field definition header. The lines starting with a
+‘#‘ are comments. Some of the comments are other contests that this
+file also works with. This is followed by the actual data. If the
+matched call has ‘UserText‘ information, that user text is populated to
+the bottom left of the logging window.</p>
+</div>
+<div class="paragraph">
+<p>So if one were to go to <strong>FILE &gt;&gt; LOAD CALL HISTORY FILE</strong> and choose
+a downloaded call history file for NAQP and typed in the call AA0AC
+while operating in the NAQP, after pressing space, one would see:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/call_history_example.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Where the Name and State would auto-populate and the UserText info
+apprears in the bottom left.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_contest_specific_notes">Contest Specific Notes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I found it might be beneficial to have a section devoted to weird quirky
+things about operating a specific contests.</p>
+</div>
+<div class="sect2">
+<h3 id="_arrl_sweekstakes">ARRL Sweekstakes</h3>
+<div class="sect3">
+<h4 id="_the_exchange_parser">The Exchange Parser</h4>
+<div class="paragraph">
+<p>This was a pain in the tukus. There are so many elements to the
+exchange, and one input field aside from the callsign field. So I had to
+write sort of a ’parser’. The parser moves over your input string
+following some basic rules and is re-evaluated with each keypress and
+the parsed result will be displayed in the label over the field. The
+exchange looks like ‘124 A K6GTE 17 ORG‘, a Serial number, Precidence,
+Callsign, Year Licenced and Section. even though the callsign is given
+as part of the exchange, the callsign does not have to be entered and is
+pulled from the callsign field. If the exchange was entered as ‘124 A 17
+ORG‘ you would see:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/ss_parser_1.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>You can enter the serial number and precidence, or the year and section
+as pairs. For instance ‘124A 17ORG‘. This would ensure the values get
+parsed correctly.</p>
+</div>
+<div class="paragraph">
+<p>You do not have to go back to correct typing. You can just tack the
+correct items to the end of the field and the older values will get
+overwritten. So if you entered ‘124A 17ORG Q‘, the precidence will
+change from A to Q. If you need to change the serial number you must
+append the precidence to it, ‘125A‘.</p>
+</div>
+<div class="paragraph">
+<p>If the callsign was entered wrong in the callsign field, you can put the
+correct callsign some where in the exchange. As long as it shows up in
+the parsed label above correctly your good.</p>
+</div>
+<div class="paragraph">
+<p>The best thing you can do is play around with it to see how it behaves.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_the_exchange">The Exchange</h4>
+<div class="paragraph">
+<p>In the ‘Sent Exchange‘ field of the New Contest dialog put in the
+Precidence, Call, Check and Section. Example: ‘A K6GTE 17 ORG‘.</p>
+</div>
+<div class="paragraph">
+<p>For the Run Exchange macro I’d put:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>{HISCALL} {SENTNR} {EXCH}</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_arrl_10m">ARRL 10M</h3>
+<div class="paragraph">
+<p>The most confusing part of ARRL 10m is apparently how to setup your
+exchange.</p>
+</div>
+<div class="sect3">
+<h4 id="_if_youre_exchange_is_rst_serial_no">If you’re exchange is (RST &#43; Serial No.)</h4>
+<div class="paragraph">
+<p>You should edit your exchange macro keys to be:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>{SNT} {SENTNR}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and a # character in the sent exchange field in the contest
+definition.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="pic/sent_exch_sn.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_if_youre_exchange_is_rst_stateprovinceitu">If you’re exchange is (RST &#43; State/Province/ITU)</h4>
+<div class="paragraph">
+<p>You should edit your exchange macro keys to be:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>{SNT} {EXCH}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and your state/prov/itu in the sent exchange field in the contest
+definition.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_raem">RAEM</h3>
+<div class="paragraph">
+<p>In the New/Edit Contest dialog, in the exchange field put just your Lat
+and Lon. for me 33N117W. And in the exchange macro put ‘#
+{EXCH}‘.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_randomgram">RandomGram</h3>
+<div class="paragraph">
+<p>This plugin was submitted by @alduhoo. It reads a rg.txt file if it
+exists in the user’s home directory to populate the next group in the
+sent exchange field.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ukei_dx">UKEI DX</h3>
+<div class="paragraph">
+<p>For the Run exchange macro I’d put ’{SNT} # {EXCH}’</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cwo_open_contest">CWO Open Contest</h3>
+<div class="paragraph">
+<p>Note: when completing the "Recd Number and Name" field, place a space
+between the received serial number and the name of the other operator.
+eg. "123 Fred". (Advance on spacebar is disabled for this field.)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2026-03-03 10:45:19 -0700
+</div>
+</div>
+</body>
+</html>
