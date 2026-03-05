@@ -1,0 +1,46 @@
+= Not1MM
+
+The world’s number 1 unfinished contest logger. ^++*++According to my
+daughter Corinna.^
+
+Not1MM’s interface is a blatant rip-off of N1MM. It is NOT N1MM and any
+problem you have with this software should in no way reflect on their
+software.
+
+== Not1MM. What is it?
+
+Not1MM attempts to be a usable ham/amateur radio contest logger. It’s
+written in Python 3.10{plus} and uses Qt6 framework for the graphical
+interface and SQLite for the database.
+
+== The Why
+
+*Currently, this exists for my own personal enjoyment*. I recently
+retired after 35{plus} years working for ’The Phone Company’, GTE →
+Verizon → Frontier. And being a Gentleman of Leisure, I needed something
+to do in my free time. I am a casual contester and could not find any
+contesting software for Linux that I wanted to use. There is *Tucnak*,
+available at _HTTP://tucnak.nagano.cz/_ which is very robust and mature.
+It just wasn’t for me.
+
+== Target Environment
+
+The primary target for this application is Linux. It may be able to run
+on other platforms, BSD and Windows. But I don’t have a way, or desire,
+to directly support them. I’ve recently purchased an M4 Mac Mini, So
+I’ll probably put more effort into that platform as well.
+
+== Current State, or Code Maturity
+
+Not1MM is, at times, fairly stable. Recently, it would seem that I’m
+desperately trying to change that. The current focus of development is
+adding support for Multi Multi contest operations. It is something that
+I have no practical experience in. So you can expect the same quality of
+code fit and finish.
+
+== Known Issues
+
+* Hamlib before 4.6.3 had a problem with sending CW and changing/reading
+the keying speed.
+* wfview before version 2.2 has issues with frequency reporting and CW
+sending.
