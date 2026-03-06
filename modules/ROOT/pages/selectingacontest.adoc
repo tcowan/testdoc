@@ -1,18 +1,18 @@
-# Selecting a Contest
+= Selecting a Contest
 
-## Selecting a New Contest
+== Selecting a New Contest
 
 Select *File ++>>++ New Contest*
 
-image:pic/new_contest.png[image,scaledwidth#50.0%]
+image:pic/new_contest.png[image,scaledwidth=50.0%]
 
-## Selecting an Existing Contest as the Current Contest
+== Selecting an Existing Contest as the Current Contest
 
 Select *File ++>>++ Open Contest*
 
-image:pic/select_contest.png[image,scaledwidth#50.0%]
+image:pic/select_contest.png[image,scaledwidth=50.0%]
 
-## Editing Existing Contest Parameters
+== Editing Existing Contest Parameters
 
 Edit the parameters of a previously defined contest by selecting it as
 the current contest. Then select *File ++>>++ Edit Current Contest*.
